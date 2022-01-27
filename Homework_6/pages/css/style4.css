@@ -1,0 +1,89 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+   
+    .square .box {
+        padding: 30px;
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+    }
+
+    .square    .base {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .square    .darkest {
+        background-color: #000;
+    }
+    
+    .square    .lightest {
+        background-color: #fff;  
+    }
+
+    .bg-green {
+        background-color: #78c479;  
+    }
+    
+    .clear {
+        clear:both;
+    }
+
+    .wrap {
+        width: 500px;
+        background-color: #ff7a7a;
+        padding: 20px;
+    }
+
+    .bg-yellow {
+        background-color: #fff323;  
+    }
+
+    .bg-blue {
+        background-color: #00b3dc;  
+    }
+
+    .left-block {
+        width: 100px;
+        height: 100px;
+        padding: 100px 0 0 100px;
+        float: left;
+    }
+
+    .block-inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right-block {
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+        float: right;
+    }
+
+    .block-green {
+        width: 1150px;
+        height: 220px;
+        padding: 0 90px 0 130px;
+    }
+
+    .block-green .box {
+        width: 205px;
+        height: 110px;  
+        float: left;   
+    }
+
+    .block-green .block-top .box.right {
+       margin: 0 0 0 380px;
+    }
+
+    .block-green .block-bottom .box.left {
+        margin: 0 470px 0 0;
+     }
+
+    .block-green .block-bottom .box {
+        float: right;   
+    }

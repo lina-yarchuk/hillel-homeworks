@@ -1,0 +1,195 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.bg-lighter {
+    background-color: #fff;
+}
+
+.bg-darkest {
+    background-color: #000;
+}
+
+.box {
+    width: 500px;
+    height: 200px;
+    background-color: pink;
+    padding: 20px;
+    position: relative;
+    }
+.box-left {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.box-left-inner {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.box-right {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box-right-inner {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.bg-yellow {
+    background-color: #ff0;
+}
+
+.bg-blue {
+    background-color: #152bb7;
+}
+
+.bg-green {
+    background-color: #008000FF;
+}
+
+.box1 {
+    width: 800px;
+    height: 200px;
+    position: absolute;
+}
+
+.box-top1 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+.box-top2 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 450px;
+}
+
+.box-bottom1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+}
+
+.box-bottom2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 610px;
+}
+
+.square {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.square1 {
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.square2 {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.square3 {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.square4 {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.square5 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.square6 {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.square7 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+

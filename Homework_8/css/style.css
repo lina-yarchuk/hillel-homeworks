@@ -1,0 +1,78 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    max-width: 1000px;
+    background-color: #0b151f;
+}
+
+.bg {
+    background-image: url(../assets/img/bg.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 42px 54px;
+}
+                
+header {
+    padding: 21px 0;
+}
+
+header .logo {
+    width: 42px;
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #b1bbcb;
+    text-transform: uppercase;
+    float: left;
+}
+
+header .nav-menu a {
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #b1bbcb;
+    margin: 0 8px;
+    float: left;
+    letter-spacing: -0.18px;
+}
+
+h1.title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 3px;
+}
+
+main {
+    padding: 42px 42px 170px;
+}
+
+main .content {
+    width: 470px;
+}
+
+main .content p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 13px;
+    letter-spacing: .05px;
+}
+
+footer {
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 27%);
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.clear {
+    clear: both;
+}

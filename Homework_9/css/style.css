@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.menu {
+    background-color: #000;
+    font-size: 0;
+    text-align: center;
+}
+
+.menu li.menu-item {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.menu .menu-item li {
+    position: relative;
+}
+
+.menu .menu-item .menu-item-link {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    background-color: #000;
+    border-right: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.menu .menu-item .menu-item-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.menu .menu-item:last-child .menu-item-link {
+    border:none;
+}
+
+.menu .menu-item .menu-inner {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.menu .menu-item .menu-item-link:hover + .menu-inner {
+    display: block;
+}
+
+.menu .menu-item .sub-menu-item-link:after {
+    content: '\1f892';
+
+    position: absolute;
+    top: -2px;
+    right: 10px;
+    font-size: 32px;
+}
+
+.menu .menu-item .menu-inner:hover {
+    display: block;
+}
+
+.menu .menu-item .sub-menu-inner {
+    left: 100%;
+    top: 0;
+}
+
+.menu .menu-item-link.catalog::before {
+    content: '\2605';
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.menu .menu-item-link.catalog::after {
+    content: '\1f53b';
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.menu .menu-item .menu-item-link.home::before  {
+    content: '\1F3E0';
+    margin-right: 10px;
+    line-height: 1em;
+}
+
+.menu .menu-item-link.discount::before {
+    content: '\0024';
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.menu .menu-item .menu-item-link.contacts {
+    padding-left: 40px;
+}
+
+.menu .menu-item-link.contacts::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    display: block;
+    width: 19px;
+    height: 37px;
+    margin: -5px 10px;
+    background-size: cover;
+    background-image:url("../assets/img/tel.jpg");
+}
