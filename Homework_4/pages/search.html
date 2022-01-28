@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	 <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Поиск</title>
+	 <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico"/>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="../index.html">Авто рынок</a> |
+			<a href="new_cars.html">Новые авто</a> |
+			<a href="used_cars.html">Б/У авто</a> |
+			<a href="registration.html">Регистрация</a> |
+			<a href="authorization.html">Авторизация</a> |
+			<a href="search.html">Поиск</a>
+		</nav>
+	</header>
+
+	<hr>
+
+	<main>
+		<h1>
+			Поиск
+		</h1>
+
+		<form action="#" method="GET">
+			<!-- Поиск -->
+			<div>
+				<input type="search" name="query" placeholder="Поиск по сайту"> 
+				<button>Найти</button>
+			</div>
+			<br>
+			
+			<!-- Тип кузова -->
+			<div>
+				<label for="category"><strong>Тип кузова:</strong></label>
+				<br>
+				<select name="category" id="category">
+					<option value="0">Выберите</option>
+					<option value="1">Cедан</option>
+					<option value="2">Хэтчбек</option>
+					<option value="3">Универсал</option>
+					<option value="4">Лифтбэк</option>
+					<option value="5">Купе</option>
+					<option value="6">Кабриолет</option>
+					<option value="7">Родстер</option>
+					<option value="8">Тарга</option>
+					<option value="9">Лимузин</option>
+					<option value="10">Стретч</option>
+					<option value="11">Кроссовер</option>
+					<option value="12">Пикап</option>
+					<option value="13">Фургон</option>
+					<option value="14">Минивэн</option>
+					<option value="15">Микроавтобус</option>
+					<option value="16">Автобус</option>
+					<option value="17">Внедорожник</option>
+				</select>
+			</div>
+			<br>
+
+			<!-- Марка авто -->
+			<div>
+				<label for="car_brand"><strong>Марка авто:</strong></label>
+				<br>
+				<select name="car_brand" id="car_brand"> 
+					<option value="0">Выберите</option>         
+					<option value="1">Subaru</option>
+					<option value="2">AMercedes-Benz</option>  
+					<option value="3">Tesla</option>        
+					<option value="4">Lexus</option>        
+					<option value="5">Skoda</option>        
+					<option value="6">BMW</option> 
+					<option value="7">Suzuki</option>        
+				</select>
+			</div>
+			<br>
+
+			<!-- Страна -->
+			<div>
+				<label for="country"><strong>Страна производитель:</strong></label>
+				<br>
+				<select name="country" id="country">
+					<option value="0">Выберите</option>
+					<option value="1">Германия</option>
+					<option value="2">Польша</option>
+					<option value="3">Латвия</option>
+					<option value="4">Швейцария</option>
+					<option value="5">Чехия</option>
+					<option value="6">Венгрия</option>
+					<option value="7">Португалия</option>
+					<option value="5">Дания</option>
+					<option value="6">Ирландия</option>
+					<option value="7">Румыния</option>
+					<option value="8">Великобритания</option>
+				</select>
+			</div>
+			<br>
+
+			<!-- Цена -->
+			<div>
+				<label for="price_from"><strong>Цена</strong></label>
+				<input type="number" name="price_from" id="price_from" placeholder="from">
+				 - 
+				<input type="number" name="price_to" id="price_to" placeholder="to">
+			</div>
+			<br>
+			
+			<!-- Год -->
+			<div> 
+				<label for="year_from"><strong>Год выпуска</strong></label>
+				<input type="number" name="year_from" id="year_from" placeholder="from">
+				 - 
+				<input type="number" name="year_to" id="year_to" placeholder="to">
+			</div>
+			<br>
+
+			<!-- Состояние -->
+			<div>
+				<div>
+					<label><strong>Состояние</strong></label>
+				</div>
+				
+				<div>
+					<label>
+						<input type="checkbox" name="condition_accident">Был в ДТП
+					</label>
+				</div>
+					
+				<div>
+					<label>
+						<input type="checkbox" name="condition_credit">В кредите
+					</label>
+				</div>
+	
+				<div>
+					<label>
+						<input type="checkbox" name="ccondition_not_cleared">Не растаможенная
+					</label>
+				</div>
+	
+				<div>
+					<label>
+						<input type="checkbox" name="condition_repainted">Перекрашенный	
+					</label>
+				</div>
+			</div>
+			<br>
+
+			<!-- топливо -->
+			<div>
+				<div>
+					<label><strong>Тип топлива</strong></label>
+				</div>
+	
+				<div>
+					<label>
+						<input type="checkbox" name="petrol">Бензин
+					</label>
+				</div> 
+	
+				<div>
+					<label>
+						<input type="checkbox" name="gas">Газ
+					</label>
+				</div>
+				
+				<div>
+					<label>
+						<input type="checkbox" name="diesel">Дизель
+					</label>
+				</div>
+	
+				<div>
+					<label>
+						<input type="checkbox" name="gas_gasoline">Газ/Бензин
+					</label>
+				</div>
+	
+				<div>
+					<label>
+						<input type="checkbox" name="electro">Электро
+					</label>
+				</div>
+			</div>
+			<br>
+
+			<!-- коробка -->
+			<div>
+				<div> 
+					<label><strong>Тип коробки передач</strong></label>
+				</div>
+
+				<div>
+					<label>
+						<input type="checkbox" name="manual">Ручная
+					</label>
+				</div>
+
+				<div>
+					<label>
+						<input type="checkbox" name="avtomat">Автомат
+					</label>
+				</div>
+				
+				<div>
+					<label>
+						<input type="checkbox" name="robot">Робот
+					</label>
+				</div>
+			</div>
+			<br>
+
+			<!-- Цвет -->
+			<div>
+				<label for="color_car"><strong>Цвет:</strong></label>
+				<select name="color" id="color_car">
+					<option value="0">Выберите</option>
+					<option value="1">Черный</option>
+					<option value="2">Серый</option>
+					<option value="3">Синий</option>
+					<option value="4">Красный</option>
+					<option value="5">Зеленый</option>
+					<option value="6">Белый</option>
+				</select>
+			</div>
+			<br>
+
+			<!-- Комфорт -->
+			<div>
+				<label for="comfort"><strong>Комфорт:</strong></label>
+				<select name="comfort" id="comfort">
+					<option value="0">Выберите</option>
+					<option value="1">Кожаный салон</option>
+					<option value="2">Подогрев сидений</option>
+					<option value="3">Белый салон</option>
+					<option value="4">белый салон</option>
+					<option value="5">Люк</option>
+				</select>
+			</div>
+		</form>
+	</main>
+
+	<hr>
+
+	<footer>
+		2021&copy;Lina Yarchuk || Homework #4
+	</footer>
+</body>
+</html>

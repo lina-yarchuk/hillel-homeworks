@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	 <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Регистрация на сайте: Авторынок</title>
+	 <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico"/>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="../index.html">Авто рынок</a> |
+			<a href="new_cars.html">Новые авто</a> |
+			<a href="used_cars.html">Б/У авто</a> |
+			<a href="registration.html">Регистрация</a> |
+			<a href="authorization.html">Авторизация</a> |
+			<a href="search.html">Поиск</a>
+		</nav>
+	</header>
+
+	<hr>
+
+	<main>
+		<h1>
+			Регистрация на сайте: Авторынок
+		</h1>
+
+		<form name="registration" method="post" action="#">
+			<div>
+				<label for="yourname">Ваше имя:</label><br>
+				<input type="text" size="40" id="yourname" name="yourname">
+			</div>
+			<br>
+
+			<div>
+				<label for="surname">Фамилия:</label><br>
+				<input type="text" size="40" id="surname" name="surname">
+			</div>
+			<br>
+			
+			<div>
+				<label for="emailAddress">e-mail:</label><br>
+				<input type="email" id="emailAddress" >
+			</div>
+			<br>
+
+			<div>
+				<label for="phone">Телефон:</label><br>
+				<input id="phone" type="tel" name="phone">
+			</div>
+			<br>
+
+			<div>
+				<label for="password">Пароль:</label><br>
+				<input id="password" type="password">
+			</div>
+			<br>
+
+			<div>
+				<label for="conpassword">Подтверждение пароля:</label><br>
+				<input id="conpassword" type="password">
+			</div>
+			<br>
+
+			<div>
+				<button>Отправить</button>
+				<button type="reset">Очистить</button>
+			</div>
+			<br>
+
+			<div>
+			<input type="checkbox" checked  id="rememberme_checkbox">
+			<label for="rememberme_checkbox">Запомнить меня</label>
+			</div>
+		</form>
+	</main>
+
+	<hr>
+
+	<footer>
+		2021&copy;Lina Yarchuk || Homework #4
+	</footer>
+</body>
+</html>

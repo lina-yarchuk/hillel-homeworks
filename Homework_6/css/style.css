@@ -1,0 +1,234 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: '';
+
+	display: block;
+	clear: both;
+}
+
+.pig {
+	width: 1000px;
+	margin: 20px auto;
+}
+
+.pig .head .ears .ear {
+	width: 260px;
+	height: 180px;
+	padding: 30px 55px 15px;
+}
+
+.pig .head .ears .ear .membrane {
+	width: 100%;
+	height: 100%;
+}
+
+.pig .head .ears .ear.left {
+	float: left;
+    margin-left: 75px;
+}
+
+.pig .head .ears .ear.right {
+	float: right;
+    margin-right: 75px;
+}
+
+.pig .head .face {
+	padding: 100px 115px 72px;
+}
+
+.pig .head .face .elements {
+	width: 100%;
+	height: 100%;
+}
+
+.pig .head .face .eyes .eye {
+	width: 260px;
+	height: 180px;
+}
+
+.pig .head .face .eyes .eye.left {
+	float: left;
+}
+
+.pig .head .face .eyes .eye .pupil {
+	width: 95px;
+	height: 125px;
+	float: right;
+	margin-top: 55px;
+}
+
+.pig .head .face .eyes .eye.right {
+	float: right;
+}
+
+.pig .head .face .eyes .eye.right .pupil {
+	float: left;
+}
+
+.pig .head .face .nose {
+	width: 320px;
+	height: 115px;
+	margin: 40px auto;
+}
+
+.pig .head .face .nose .nostril {
+	width: 65px;
+	height: 85px;
+	margin-top: 30px;
+}
+
+.pig .head .face .nose .nostril.left {
+	float: left;
+	margin-left: 50px;
+}
+
+.pig .head .face .nose .nostril.right {
+	float: right;
+	margin-right: 50px;
+}
+
+.pig .head .face .mouth {
+	width: 750px;
+	height: 90px;
+	margin: 42px auto 70px;
+}
+
+.pig .head .face .mouth .lip .teeth {
+	width: 680px;
+}
+
+.pig .head .face .mouth .lip.top .teeth {
+	float:right;
+}
+
+.pig .head .face .mouth .lip.bottom .teeth {
+	float:left;
+}
+
+.pig .head .face .mouth .lip .teeth .tooth {
+	width: 60px;
+	height: 45px;
+	float: left;
+    margin: 0 25px;
+}
+
+.pig .head .neck {
+	width: 260px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+.pig .head .neck .decoration {
+	height: 30px;
+}
+
+.pig .body .torso .hand {
+	width: 135px;
+	height: 175px;
+	margin-top: 70px;
+}
+
+.pig .body .torso .hand.left {
+	float: left;
+	border-radius: 20px 0 0 20px;
+}
+
+.pig .body .torso .hand.left .fingers {
+	width: 40px;
+	height: 175px;
+	float: left;
+	border-radius: 20px 0 0 20px;
+}
+
+.pig .body .torso .breast {
+	width: 730px;
+	height: 760px;
+	border-radius: 30px;
+	float: right;
+	padding: 275px 115px 55px 175px;
+}
+
+.pig .body .torso .breast .stomach {
+	width: 430px;
+	height: 430px;
+	border-radius: 50%;
+	float: right;
+}
+
+.pig .body .torso .hand.right {
+	float: right;
+	border-radius: 0 20px 20px 0;
+}
+
+.pig .body .torso .hand.right .fingers {
+	width: 40px;
+	height: 175px;
+	float: right;
+	border-radius: 0 20px 20px 0;
+}
+
+.pig .body .legs .leg {
+	width: 160px;
+	height: 150px;
+	border-radius: 0 0 20px 20px;
+}
+
+.pig .body .legs .leg.left {
+	float: left;
+	margin-left: 200px;
+}
+
+.pig .body .legs .leg.left .fingers {
+	width: 160px;
+	height: 40px;
+	margin-top: 110px;
+	border-radius: 0 0 20px 20px;
+}
+
+.pig .body .legs .leg.right {
+	float: right;
+	margin-right: 200px;
+}
+
+.pig .body .legs .leg.right .fingers {
+	width: 160px;
+	height: 40px;
+	margin-top: 110px;
+	border-radius: 0 0 20px 20px;
+}
+
+.bg-primary {
+	background-color: #9675b5;
+}
+
+.bg-secondary {
+	background-color: #f5bb1a;
+} 
+
+.bg-darkest {
+	background-color: #000;
+}
+
+.bg-warning {
+	background-color: #fdc681;
+}
+
+.bg-danger {
+	background-color: #e01921;
+}
+
+.bg-hot {
+	background-color: #e83597;
+}
+
+.bg-lighter {
+	background-color: #ffffff;
+}
