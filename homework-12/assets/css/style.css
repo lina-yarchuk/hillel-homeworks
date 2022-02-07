@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+    min-width: 250px;
+    padding: 24px 15px;
+    border-radius: 9px;
+}
+
+.bg-lighter {
+    background-image: linear-gradient(180deg, #ff6c54 1%, #ff2b59 99%);
+}
+
+.bg-darkest {
+    background-image: linear-gradient(166deg, #6dffc6 1%, #3fd2ce 99%);
+}
+
+.ly-xy-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(100,100,100,.05);
+}
+
+.header .header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 0;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #3f4244;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header .header-line .logo-box {
+    flex: 50%;
+}
+
+.header .header-line .header-nav {
+    flex: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .header-line .header-nav a {
+    height: 35px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3f4244;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    background-image: linear-gradient(166deg, #6dffc6 1%, #3fd2ce 99%);
+    color: white;
+}
+
+.design .content {
+    padding: 200px 0;
+}
+
+.design .content h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 300;
+    margin: 25px 0;
+}
+
+.design .content .design-btn {
+    margin: 25px 0;
+}
+
+.benefits .content .directions {
+    display: flex;
+    text-align: center;
+    padding: 100px 0 70px;
+}
+
+.benefits .content .directions .direction h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #3f4244;
+    text-align: center;
+    padding: 20px 0 30px;
+}
+
+.benefits .content .directions .direction .description {
+    font-size: 13px;
+    color: #929ba0;
+    text-align: center;
+}
+
+.benefits .content .service {
+    padding: 0 0 70px;
+}
+
+.cross-browser .content h2 {
+    font-weight: 300;
+    font-size: 40px;
+    color: #fff;
+    padding: 100px 0 40px;
+}
+
+.cross-browser .content .description {
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 140px;
+}
+
+.cross-browser .content .image img {
+    vertical-align: bottom;
+}
+
+.fully-responsive .content {
+    display:flex;
+}
+
+.fully-responsive .content .phones {
+    flex: 50%;
+}
+
+.fully-responsive .content .phones img {
+    margin: 50px 0 50px 130px;
+}
+
+.fully-responsive .content .description {
+    flex: 50%;
+    padding: 130px 0 100px;
+}
+
+.fully-responsive .content .description h3 {
+    font-size: 40px;
+    color: #3f4244;
+}
+
+.fully-responsive .content .description p {
+    margin: 50px 0;
+    font-size: 15px;
+    color: #929ba0;
+    font-weight: 300;
+}
+
+.portfolio {
+    padding: 70px 0;
+}
+
+.portfolio .promo h4 {
+    margin-bottom: 40px;
+    text-align:  center;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.portfolio .promo .description {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+}
+
+.portfolio .content {
+    margin-top: 105px;
+}
+
+.portfolio .content .tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio .content .tabs .tab-links {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.portfolio .content .tabs .tab-links li a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 15px;
+    color: #3f4244;
+    font-weight: 500;
+    text-transform: uppercase;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.portfolio .content .tabs .tab-links li a:hover {
+    color: #fff;
+}
+
+.portfolio .content .tabs .tabs-content .services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .content .tabs .tabs-content .services .service {
+    width: 33.333333%;
+    padding: 10px;
+}
+
+.portfolio .content .tabs .tabs-content .services .service img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.portfolio .content .tabs .tabs-content .services .service .content {
+    padding: 15px;
+    margin-top: 0;
+    background-color: #fff;
+}
+
+.portfolio .content .tabs .tabs-content .services .service .content h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #3f4244;
+    text-align: center;
+}
+
+.portfolio .content .tabs .tabs-content .services .service .content p {
+    padding: 20px 50px;
+    font-size: 13px;
+    color: #929ba0;
+    text-align: center;
+}
+
+.portfolio .content .services-add {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+   }
+
+.portfolio .content .services-add button {
+    border: none;
+    background-color: #47d9cd;
+}
