@@ -56,11 +56,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 27px 0;
-    font-size: 15px;
-    line-height: 1.2;
-    color: #3f4244;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 .header .header-line .logo-box {
@@ -74,8 +69,6 @@ body {
 }
 
 .header .header-line .header-nav a {
-    height: 35px;
-    width: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,6 +77,8 @@ body {
     border: 0;
     border-radius: 5px;
     text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
 }
 
 .header-nav a:hover {
@@ -91,7 +86,7 @@ body {
     color: white;
 }
 
-.design .content {
+.design {
     padding: 200px 0;
 }
 
@@ -109,7 +104,7 @@ body {
 .benefits .content .directions {
     display: flex;
     text-align: center;
-    padding: 100px 0 70px;
+    margin: 100px 0 70px;
 }
 
 .benefits .content .directions .direction h4 {
@@ -141,7 +136,7 @@ body {
     font-size: 13px;
     color: #fff;
     text-align: center;
-    padding: 0 0 140px;
+    margin: 0 0 140px;
 }
 
 .cross-browser .content .image img {
@@ -227,39 +222,39 @@ body {
     color: #fff;
 }
 
-.portfolio .content .tabs .tabs-content .services {
+.portfolio .content .tabs .services {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
-.portfolio .content .tabs .tabs-content .services .service {
+.portfolio .content .tabs .services .service {
     width: 33.333333%;
     padding: 10px;
 }
 
-.portfolio .content .tabs .tabs-content .services .service img {
+.portfolio .content .tabs .services .service img {
     width: 100%;
     vertical-align: bottom;
 }
 
-.portfolio .content .tabs .tabs-content .services .service .content {
+.portfolio .content .tabs .services .service .content {
     padding: 15px;
     margin-top: 0;
     background-color: #fff;
+    text-align: center;
 }
 
-.portfolio .content .tabs .tabs-content .services .service .content h4 {
+.portfolio .content .tabs .services .service .content h4 {
     text-transform: uppercase;
     font-size: 15px;
     color: #3f4244;
-    text-align: center;
 }
 
-.portfolio .content .tabs .tabs-content .services .service .content p {
-    padding: 20px 50px;
+.portfolio .content .tabs .services .service .content p {
+    margin: 20px 50px;
     font-size: 13px;
     color: #929ba0;
-    text-align: center;
 }
 
 .portfolio .content .services-add {
