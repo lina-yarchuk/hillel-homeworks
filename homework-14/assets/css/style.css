@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Gilroy", "Roboto", sans-serif;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ly-xy-center > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-list-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ly-xy-center > :first-child {
+   border-left: 1px solid #ccc;
+}
+
+.grid-list-right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.bg-lighter {
+    background-color: #4FBFA5;
+}
+
+.bg-darkest {
+    background-color: #00868A;
+}
+
+.header .grid-list-left {
+    align-items: center;
+    justify-content: center;
+}
+
+ .logo-box {
+    padding: 15px;
+}
+
+.header .grid .phone {
+    text-align: center;
+}
+
+.header .phone a {
+    font-size: 18px;
+    color: #000;
+}
+
+.header .grid .our-salons {
+    text-align: center;
+}
+
+.header .grid .our-salons img {
+    vertical-align: text-bottom;
+}
+
+.header .our-salons a {
+    font-size: 18px;
+    color: #000;
+    margin: 10px;
+}
+
+.header .grid-list-right {
+    align-items: center;
+    justify-content: center;
+}
+
+.header .grid-list-right .visually-impaired {
+    text-align: center;
+}
+
+.header .grid-list-right .visually-impaired button {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    padding: 6px 12px;
+    line-height: 1;
+}
+
+.header .grid-list-right .visually-impaired img {
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.header .grid-list-right .visually-impaired button {
+    border: none;
+}
+
+.header .grid-list-right .social li {
+    padding: 32px;
+    text-align: center;
+}
+
+.cosmetology-main .main-menu {
+    display: grid;
+    justify-content: center;
+}
+
+.cosmetology-main .main-menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    text-align: center;
+}
+
+.cosmetology-main .main-menu ul li a {
+    padding: 5px;
+    color: #fff;
+}
+
+.cosmetology-main .main-menu ul li button {
+    border: none;
+}
+
+.cosmetology .content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.cosmetology .content .description h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: 160px 0 20px 0;
+}
+
+.cosmetology .content .description p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    vertical-align:top;
+    margin: 0 110px 0 0;
+}
+
+.cosmetology .content .description button {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+    margin: 40px 0 60px 0;
+}
+
+.cosmetology .content .description .arrows {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+.cosmetology .content .description .arrows .arrow {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.cosmetology .content .description .arrows .arrow.right {
+    margin-left: -1px;
+}
+
+.cosmetology .content .rectangle-img {
+    margin-left: 20px;
+}
+
+.cosmetology .content .rectangle-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.cosmetology .services {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    text-align: center;
+    font-size: 21px;
+}
+
+.cosmetology .services .service {
+    padding: 25px;
+}
+
+.cosmetology .services .service a {
+    color: #fff;
+}
