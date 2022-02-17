@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Gilroy", "Roboto", sans-serif;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.xy-center > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.header__grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.header__list-left {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.xy-center > :first-child {
+   border-left: 1px solid #ccc;
+}
+
+.header__list-right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.header__social {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.bg-lighter {
+    background-color: #4FBFA5;
+}
+
+.bg-darkest {
+    background-color: #00868A;
+}
+
+.header__list-left {
+    align-items: center;
+    justify-content: center;
+}
+
+ .header__logo-box {
+    padding: 15px;
+}
+
+.header__phone {
+    text-align: center;
+}
+
+.header__phone-link{
+    font-size: 18px;
+    color: #000;
+}
+
+.header__salons {
+    text-align: center;
+}
+
+.header__salons-link {
+    font-size: 18px;
+    color: #000;
+    margin: 10px;
+}
+
+.header__salons-img {
+    vertical-align: text-bottom;
+}
+
+.header__list-right {
+    align-items: center;
+    justify-content: center;
+}
+
+.header__visually-impaired {
+    text-align: center;
+}
+
+.header__visually-impaired-btn {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    padding: 6px 12px;
+    line-height: 1;
+    border: none;
+}
+
+.header__visually-impaired-img {
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.header__social-item {
+    padding: 32px;
+    text-align: center;
+}
+
+.cosmetology-main__menu {
+    display: grid;
+    justify-content: center;
+}
+
+.cosmetology-main__menu-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+    text-align: center;
+}
+
+.cosmetology-main__menu-link {
+    padding: 5px;
+    color: #fff;
+}
+
+.cosmetology-main__menu-button {
+    border: none;
+}
+
+.cosmetology__content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.cosmetology__title {
+    color: #fff;
+    font-size: 48px;
+    margin: 160px 0 20px 0;
+}
+
+.cosmetology__text{
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    vertical-align:top;
+    margin: 0 110px 0 0;
+}
+
+.cosmetology__btn{
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+    margin: 40px 0 60px 0;
+}
+
+.cosmetology__arrows {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+.cosmetology__arrow {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.cosmetology__arrow--right {
+    margin-left: -1px;
+}
+
+.cosmetology__rectangle{
+    margin-left: 20px;
+}
+
+.cosmetology__rectangle-img {
+    width: 100%;
+    height: 100%;
+}
+
+.cosmetology__services {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    text-align: center;
+    font-size: 21px;
+}
+
+.cosmetology__service {
+    padding: 25px;
+}
+
+.cosmetology__service-link {
+    color: #fff;
+}
