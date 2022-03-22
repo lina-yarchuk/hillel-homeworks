@@ -260,9 +260,6 @@ a {
 		min-height: 110px;
 	}
 
-	&__img {
-	}
-
 	&__description {
 		padding: 46px 27px 0 17px;
 	}
@@ -301,9 +298,6 @@ a {
 			flex-wrap: wrap;
 			text-align: center;
 		}
-	}
-
-	&__block {
 	}
 
 	&__title {
@@ -495,8 +489,6 @@ a {
 		gap: 30px;
 	}
 
-	&__item {
-	}
 
 	&__img {
 		@media (max-width: $xl-max) {
