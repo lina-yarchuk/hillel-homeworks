@@ -1,0 +1,38 @@
+.painting {
+    width: 1300px;
+    height: 1005px;
+}
+
+.sky {
+    fill: #93d6e1;
+}
+
+.water {
+    fill: #273c97;
+}
+
+.beach {
+    fill: #d7d83d;
+}
+
+.cloud, .flag, .circle-white {
+    fill: #fff;
+}
+
+.column {
+    stroke: #a03533;
+    stroke-width: 14;
+}
+
+.ship {
+    fill: #59130b;
+}
+
+.leg {
+    stroke: #4f2c14;
+    stroke-width: 20;
+}
+
+.circle-red {
+    fill: #ed4426;
+}
