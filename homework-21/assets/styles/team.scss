@@ -1,0 +1,144 @@
+@import "./variables.scss";
+@import "./mixin";
+
+.team {
+	padding: 60px 0 40px 0;
+
+	&__slider {
+		display: flex;
+		margin-bottom: 20px;
+
+		@media (max-width: 1319px) {
+			justify-content: center;
+		}
+	}
+
+	&__img {
+		@media (max-width: 1319px) {
+			width: 100%;
+			max-width: 350px;
+			height: 100%;
+		}
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	&__content {
+		padding: 40px 20px 0 40px;
+		background-color: $color-bg_grey;
+		border-radius: 0 12px 12px 0;
+		width: 907px;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+			max-width: 600px;
+			padding: 25px 20px 0 30px;
+		}
+
+		@media (max-width: 767px) {
+			padding: 20px 0 20px 20px;
+		}
+	}
+
+	&__content-inscription {
+		color: $color-active;
+
+		&::after {
+			content: url("../img/blue-star.svg");
+			position: absolute;
+			top: 1px;
+			right: -10px;
+		}
+		&:hover {
+			color: #0085FF;
+		}
+	}
+
+	&__title {
+		width: 825px;
+		margin-bottom: 20px;
+
+		@media (max-width: 1319px) {
+			@include title-font;
+			width: 100%;
+		}
+
+		@media (max-width: 767px) {
+			@include title-font;
+			width: 100%;
+		}
+	}
+
+	&__name {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: $color-text_gray;
+		margin-bottom: 5px;
+		text-decoration: none;
+
+		&:hover {
+			color: $color-accent;
+		}
+
+		@media (max-width: 767px) {
+			display: flex;
+			align-items: center;
+		}
+
+		& .mobil-avatar {
+			display: none;
+
+			@media (max-width: 767px) {
+				display: block;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__post {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #B3B3BA;
+	}
+
+	&__title-team {
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 50px;
+		background-color: $color-gradient_red-text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@media (max-width: 1319px) {
+			@include title-font;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+}
+
+.owl-carousel .owl-item .mobil-avatar {
+	display: none;
+}
+
+.team__switch-slide.team__slider {
+
+	@media (max-width: 767px) {
+		.mobil-avatar {
+			display: block;
+			margin-right: 10px;
+		}
+
+		.team__img {
+			display: none;
+		}
+	}
+}
+
+

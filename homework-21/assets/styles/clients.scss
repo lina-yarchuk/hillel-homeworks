@@ -1,0 +1,91 @@
+@import "./variables.scss";
+
+.clients {
+	padding-top: 30px;
+	width: 1440px;
+	margin: 0 auto;
+
+	@media (max-width: 1440px) {
+			width: 100%;
+	}
+
+	&__item {
+		width: 360px;
+		height: 120px;
+
+		@media (max-width: 767px) {
+			width: 50%;
+			height: auto;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 1px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-main;
+		margin-bottom: 30px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+
+		@media (max-width: 1440px) {
+			justify-content: center;
+		}
+	}
+
+	&__img {
+		@media (max-width: 767px) {
+			width: 100%;
+			display: block;
+		}
+
+		@media (max-width: 488px)  {
+			width: 100%;
+			display: block;
+			height: 90px;
+			object-fit: cover;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.hillel {
+		order: -6;
+	}
+	.wannabiz {
+		order: -6;
+	}
+	.tapgerine {
+		order: -6;
+	}
+	.look {
+		order: -5;
+	}
+	.ecoleasing {
+		order: -5;
+	}
+	.clikky {
+		order: -4;
+	}
+	.orangear {
+		order: -3
+	}
+	.infratek {
+		order: -3;
+	}
+	.ultimate {
+		order: -2;
+	}
+	.city {
+		order: 1;
+	}
+	.adteligent {
+		order: 2;
+	}
+}

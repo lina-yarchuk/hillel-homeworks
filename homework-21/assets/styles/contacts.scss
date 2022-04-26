@@ -1,0 +1,260 @@
+@import "./variables.scss";
+@import "./mixin";
+
+.contacts {
+	padding: 80px 0 67px 0;
+	display: flex;
+	justify-content: center;
+
+	@media (max-width: 1319px) {
+		padding: 40px 20px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 20px 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__text {
+		padding: 128px 0 137px 0;
+		margin-right: 153px;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+			max-width: 414px;
+			margin-right: 60px;
+		}
+
+		@media (max-width: 767px) {
+			padding: 0;
+			margin-right: 0;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__address {
+		font-size: 21px;
+		line-height: 30px;
+		color: $color-main;
+		width: 414px;
+		border-bottom: 4px solid $color-grey;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+			max-width: 414px;;
+		}
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	&__mob {
+		display: none;
+
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	&__tell {
+		text-decoration: none;
+		font-size: 21px;
+		line-height: 30px;
+		color: $color-alt;
+		width: 414px;
+		display: block;
+		margin-bottom: 20px;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+			max-width: 414px;;
+		}
+	}
+
+	&__mail {
+		font-size: 21px;
+		line-height: 30px;
+		width: 414px;
+		color: $color-active;
+		display: block;
+		border-bottom: 4px solid $color-grey;
+		padding-bottom: 40px;
+		margin-bottom: 20px;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+			max-width: 414px;;
+		}
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+			max-width: 414px;;
+		}
+	}
+
+	&__facebook {
+		margin-right: 10px;
+	}
+
+	&__link {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: $color-active;
+		width: 123px;
+		text-decoration: none;
+		&:hover {
+			color: $color-accent;
+		}
+	}
+
+	&__forms {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 20px;
+		background-color: $color-bg_grey;
+		width: 527px;
+		border-radius: 12px;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+			max-width: 487px;
+		}
+
+
+		& .popup-console {
+			display: block;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			z-index: 1000;
+			background-color: rgba(50, 50, 100, .7);
+
+			&:not(:target):not([open]) {
+
+			}
+		}
+
+		.forms-head {
+			position: relative;
+		}
+
+		.close-console {
+			position: absolute;
+			top: -5px;
+			right: -5px;
+			border: none;
+			margin-left: auto;
+			width: 32px;
+			height: 32px;
+			padding: 0;
+			background-color: transparent;
+			cursor: pointer;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		& .forms {
+			display: flex;
+			flex-direction: column;
+			padding: 20px 20px;
+			background-color: #F5F5FA;
+			border-radius: 12px;
+			width: 527px;
+			margin: auto;
+
+			@media (max-width: 1319px) {
+				width: 100%;
+			}
+
+			&.forms-console {
+				@media (max-width: 1319px) {
+					width: 100%;
+				}
+			}
+		}
+
+		.forms-title {
+			font-weight: 700;
+			@include title-font;
+			margin-bottom: 20px;
+			background-image: linear-gradient(265.13deg, #EF8080 0.84%, #F0145A 99.96%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			color: #F0145A;
+
+			@media (max-width: 767px) {
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 26px;
+				color: #F0145A;
+			}
+		}
+
+		& .forms-input {
+			border: none;
+			margin-bottom: 20px;
+			border-radius: 8px;
+			padding: 16px 0 13px 10px;
+			font-size: 18px;
+			line-height: 26px;
+			color: #B3B3BA;
+			font-family: 'TT Norms', sans-serif;
+		}
+
+		& .forms-subtitle {
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: #B3B3BA;
+			margin-left: 10px;
+			margin-bottom: 20px;
+		}
+
+		& .forms-submit {
+			padding: 15px 71px;
+		}
+
+		& .form-message {
+			padding: 14px 0 13px 10px;
+			width: 487px;
+			height: 180px;
+			resize: none;
+
+			@media (max-width: 1319px) {
+				width: 100%;
+			}
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.map {
+	line-height: 0;
+	text-align: center;
+}
+
+.google-map {
+	width: 100%;
+	max-width: 1440px;
+
+}
