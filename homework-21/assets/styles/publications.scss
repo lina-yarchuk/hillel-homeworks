@@ -1,0 +1,75 @@
+@import "./variables.scss";
+
+.publications {
+	padding-bottom: 60px;
+
+	& .active-menu {
+		border-bottom: 2px solid #F0145A;
+		color: #F0145A;
+		cursor: default;
+	}
+}
+
+.checkbox-button {
+	text-align: center;
+	line-height: 0;
+	margin-bottom: 40px;
+}
+.checkbox {
+	display: inline-block;
+	position: relative;
+}
+.checkbox .checkbox-switch {
+	display: inline-block;
+	height: 47px;
+	width: 260px;
+	background: $color-grey;
+	border-radius:  12px;
+
+}
+.checkbox .checkbox-switch:before {
+	content: attr(data-label-on);
+	display: inline-block;
+	padding: 10px 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	position: absolute;
+	top: 3px;
+	left: 155px;
+	color: $color-main;
+}
+.checkbox .checkbox-switch:after {
+	content: attr(data-label-off);
+	display: inline-block;
+	width: 124px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	padding: 10px 0;
+	background: $color-white;
+	color: $color-main;
+	border-radius: 12px;
+}
+
+@media (max-width: 1319px) {
+	.mid-none {
+		display: none;
+	}
+
+	.public-last {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.checkbox-button {
+		margin-bottom: 20px;
+	}
+}
+.articles__padding {
+	padding-bottom: 60px;
+}

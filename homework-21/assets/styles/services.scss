@@ -1,0 +1,146 @@
+@import "./variables.scss";
+@import "./mixin";
+
+.header__bgc {
+	background-color: $color-main;
+}
+
+.services {
+	padding-top: 80px;
+	position: relative;
+
+	@media (max-width: 1319px) {
+		padding-top: 50px;
+	}
+
+	@media (max-width: 767px) {
+		padding-top: 40px;
+	}
+
+	&__cart-title {
+		font-size: 42px;
+		line-height: 50px;
+		background-image: $color-gradient_red-text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: $color-accent;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+			font-size: 36px;
+			line-height: 45px;
+		}
+
+		@media (max-width: 767px) {
+			@include title-font;
+		}
+	}
+
+	&__list {
+		padding-top: 68px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@media (max-width: 767px) {
+			padding-top: 20px;
+		}
+	}
+
+	&__item {
+		margin-bottom: 80px;
+
+		@media (max-width: 767px) {
+			margin-bottom: 40px;
+		}
+
+		& .services__item-img {
+			@media (max-width: 767px) {
+				width: 100%;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+
+	&__link {
+		width: 92px;
+		height: 92px;
+		display: block;
+		margin-bottom: 20px;
+
+		@media (max-width: 767px) {
+			margin-right: 10px;
+			width: 64px;
+			height: 64px;
+		}
+	}
+
+	&__img {
+		@media (max-width: 767px) {
+			width: 64px;
+			height: 64px;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		color: $color-active;
+		width: 410px;
+		margin-bottom: 15px;
+
+		@media (max-width: 767px) {
+			width: 100%;
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+
+	&__description {
+		width: 410px;
+		color: $color-white;
+
+		@media (max-width: 767px) {
+			width: 100%;
+			max-width: 400px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+}
+
+.services__active-menu {
+	border-bottom: 2px solid #fff;
+	cursor: default;
+}
+
+
+	.bg-services {
+		background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 86.17%, #643E72 115.54%);
+	}
+
+	.mt60 {
+		margin:60px 0 40px;
+	}
+
+	.footer-padding {
+		padding: 30px 0;
+
+		@media (max-width: 1319px) {
+			padding: 30px 20px;
+		}
+
+		@media (max-width: 767px) {
+			border: none;
+			padding: 0 20px;
+		}
+	}
+
+.services__logo {
+	@media (max-width: 767px) {
+		width: 205px;
+		height: 30px;
+	}
+}
