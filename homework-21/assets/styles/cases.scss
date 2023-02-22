@@ -1,0 +1,139 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.cases {
+
+	&__card-list {
+		display: flex;
+		flex-wrap: wrap;
+		border-radius: 12px;
+		background-color: $color-bg_grey;
+		}
+
+	&__card-item {
+		border-left: 2px solid $color-white;
+		border-bottom: 2px solid $color-white;
+
+		@media (max-width: 1319px) {
+			width: 50%;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+			padding: 20px;
+		}
+
+		&.team__cases {
+			padding: 0;
+		}
+
+		&.bloc-top {
+			padding: 105px 20px 20px 20px;
+			@media (max-width: 1319px) {
+			}
+
+			@media (max-width: 767px) {
+				padding: 20px;
+			}
+		}
+
+		&.bloc-small {
+			padding: 20px 20px 20px 20px;
+
+			@media (max-width: 1319px) {
+				padding: 105px 20px 20px 20px;
+			}
+			@media (max-width: 767px) {
+				padding: 20px;
+			}
+		}
+
+		&.bloc-bottom {
+			padding: 75px 20px 20px 20px;
+
+			@media (max-width: 767px) {
+				padding: 20px;
+			}
+		}
+	}
+
+	&__card-inscription {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		text-decoration: none;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: $color-accent;
+		padding: 20px 19px 19px 20px;
+		width: 100%;
+		border-bottom: 2px solid $color-white;
+
+		@media (max-width: 767px) {
+			padding: 20px;
+		}
+	}
+
+	&__card-content {
+		margin: 46px 19px 19px 20px;
+
+		@media (max-width: 1319px) {
+			margin: 20px;
+		}
+
+		@media (max-width: 767px) {
+			margin: 20px;
+			width: 100%;
+		}
+	}
+
+	&__card-description {
+		display: flex;
+		align-items: flex-end;
+		font-weight: 500;
+		width: 392px;
+		font-size: 24px;
+		line-height: 28px;
+		color: $color-soft;
+		margin-bottom: 20px;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+		}
+
+		@media (max-width: 767px) {
+			max-width: 500px;
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+
+	.description-large{
+		width: 505px;
+
+		@media (max-width: 1319px) {
+			width: 100%;
+		}
+	}
+
+	&__card-link {
+		@include standard-font;
+		color: $color-text_gray;
+		text-decoration: none;
+
+		&:hover {
+			color: $color-accent;
+		}
+	}
+}
+
+.description-small {
+	max-width: 280px;
+
+	@media (max-width: 1319px) {
+		max-width: 100%;
+	}
+	@media (max-width: 767px) {
+		max-width: 100%;
+	}
+}

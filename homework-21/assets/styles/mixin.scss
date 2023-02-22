@@ -1,0 +1,11 @@
+
+
+@mixin standard-font {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+@mixin title-font {
+	font-size: 32px;
+	line-height: 38px;
+}
